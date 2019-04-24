@@ -9,10 +9,10 @@ $SecurePswd = ConvertTo-SecureString $password -AsPlainText -Force
 Install-ADDSForest `
 -CreateDnsDelegation:$false `
 -DatabasePath “C:\Windows\NTDS” `
--DomainMode “Win2012R2” `
--DomainName “yourdomain.com” `
--DomainNetbiosName “YOURDOMAIN” `
--ForestMode “Win2012R2” `
+-DomainMode “Default” `
+-DomainName “testdomain.com” `
+-DomainNetbiosName “TESTDOMAIN” `
+-ForestMode “Default” `
 -InstallDns:$true `
 -LogPath “C:\Windows\NTDS” `
 -NoRebootOnCompletion:$false `
