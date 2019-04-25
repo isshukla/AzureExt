@@ -1,6 +1,6 @@
 
 #Install AD
-Install-windowsfeature AD-Domain-Services
+Install-windowsfeature AD-Domain-Services -IncludeManagementTools
 
 
 $password = "Password12345"
