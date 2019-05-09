@@ -9,4 +9,4 @@ $pwd = ($pwd1 | ConvertTo-SecureString);
 $Credential = New-Object System.Management.Automation.PSCredential $user, $pwd;
 Start-Process powershell.exe -Credential $Credential; 
 
-New-Cluster -Name AzClu -Node ("SQL1","SQL2") –StaticAddress 172.30.0.11 -NoStorage;
+New-Cluster -Name AzClu -Node ("SQL1","SQL2") -NoStorage;
